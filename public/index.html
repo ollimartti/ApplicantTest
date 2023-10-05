@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="center">
+    <div class="container">
+        <div>
+            <h1>Upload material</h1>
+
+            <form action="/loadjson" method="POST">
+            <div>
+                <label for="file">Upload updated material: </label>
+                <input type="file" id="file" name="file" accept=".json" />
+            </div>
+            <div>
+                <input type="submit" value="Update"/>
+            </div>
+            </form>
+        </div>
+        <br />
+    <hr color="#00bdf3"/><br/>
+        <div>
+            <h1>Vehicle data</h1>
+
+            <form action="/getlist" method="POST">
+                <input id="textinputx" type="text" name="textinputx" 
+                    placeholder="Search..." onkeyup="readText()"/>
+                <input type="submit" value="TEST" hidden/>
+            </form>
+            <br />
+
+            <table>
+                <tr>
+                    <th width="40px">Year</th>
+                    <th width="120px">Make</th>
+                    <th width="100px">Model</th>
+                    <th width="90px">Rejection%</th>
+                    <th width="220px">Rejection reason #1</th>
+                    <th width="220px">Rejection reason #2</th>
+                    <th width="220px">Rejection reason #2</th>
+                </tr>
+                    <!-- Dynamic table rows should be here-->
+            </table>
+        </div>
+    </div>
+    </br></br></br></br>
+
+    <!-- This is for testing "live" search input  -->
+    <p class="testing" id="demo"></p> 
+
+<script>
+    function readText() {
+        let text = document.getElementById("textinputx").value;
+        document.getElementById("demo").innerHTML = "Search field input testing: " + text;
+        return(text)
+    }
+</script> 
+</body>
+</html>
