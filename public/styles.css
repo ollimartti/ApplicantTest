@@ -1,23 +1,18 @@
-
-.center {
-  
-  margin: auto;
-  width: 70%;
-  padding: 10px;
-}
-
 body {
   font-family: "Lato", sans-serif;
   color: white;
   background-color: #1e1e1e;
   min-height: 100vh;
-  padding-top: 90px;
-  width: 900px;
- 
+  padding-top: 80px;
+  width: 1000px;
+  margin: auto;
+  width: 70%;
+  padding: 10px;
 }
 
 .container {
-  min-width: 800px;
+  justify-content: center;
+  width: 800px;
   min-height: 200px;
 }
 
@@ -26,15 +21,17 @@ tr:nth-child(odd) {
   }
 
 table {
+    font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    background-color: rgb(202, 202, 202);
-    color: black;   
+    background-color: white;
+    color: black;
+    
   }
 
 th {
-    background-color: rgb(184, 183, 183);
+    background-color: white;
     border-bottom-style: solid;
-  }
+}
 
 th, td {
     text-align: left;
@@ -61,14 +58,16 @@ input[type="file"] {
     padding: 5px;
     margin: 2px;
   }
- 
+
+  
 input[type="file"]::before {
     top: 16px;
   }
   
+
 input[type="file"] {
   position: relative;
-  }
+}
 
 input[type="file"]::file-selector-button {
   background-color: #1e1e1e;
@@ -77,20 +76,8 @@ input[type="file"]::file-selector-button {
   color: #00bdf3;
   padding: 6px;
     margin: 4px;
-  }
-
+}
 input[type=file]::file-selector-button:hover {
   background-color: #00bdf3;
   color: #1e1e1e;
-  }
-
- .testing {
-  color: rgb(73, 73, 73);
 }
-
-#textinputx {
-  border: solid;
-  color: rgb(95, 95, 95);
-  background-color: #1e1e1e;
-  padding: 5px
-  }
