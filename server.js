@@ -15,7 +15,7 @@ app.use(express.static(__dirname + '/public'));
 var con = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "password",
+    password: "password",              // PASSWORD
     database: "trafiexample"  // MySQL-database
 });
 
@@ -44,7 +44,7 @@ app.get("/list", (req, res) => {
 
     var r;
     var result;
-    con.query('SELECT * FROM vehdata',
+    con.query('SELECT * FROM vehdata ORDER BY make',
     function (err, result, fields) {
         if (err) 
         {
