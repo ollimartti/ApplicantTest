@@ -25,9 +25,22 @@ table {
     border-collapse: collapse;
     background-color: white;
     color: black;
-    
   }
 
+  .scroll-thead{
+    width: 100%;
+    display: inline-table;
+  }
+
+.scroll-tbody-y{
+    display: block;
+    overflow-y: scroll;
+  }
+
+.table-body{
+    height: 500px;
+  }
+  
 th {
     background-color: white;
     border-bottom-style: solid;
